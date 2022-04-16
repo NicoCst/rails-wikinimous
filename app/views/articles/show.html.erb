@@ -1,0 +1,5 @@
+<h1>Article content</h1>
+<%= @article.content %>
+<i class="fa fa-pencil"><%= link_to 'Edit', edit_article_path(@article) %></i>
+<%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %>
+<br><%= link_to 'Back to articles', articles_path %>
